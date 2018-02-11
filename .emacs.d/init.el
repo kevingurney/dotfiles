@@ -29,3 +29,9 @@
 ;; Load the gruvbox-dark-hard color theme after initialization.
 (add-hook 'after-init-hook (lambda()
 			     (load-theme 'gruvbox-dark-hard)))
+
+;; Save customizations in a separate custom.el file.
+;; Inspired by:
+;; http://emacsblog.org/2008/12/06/quick-tip-detaching-the-custom-file/
+(setq custom-file "~/.emacs.d/custom.el")
+(load custom-file 'noerror)
