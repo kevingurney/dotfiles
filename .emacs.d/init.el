@@ -35,3 +35,10 @@
 ;; http://emacsblog.org/2008/12/06/quick-tip-detaching-the-custom-file/
 (setq custom-file "~/.emacs.d/custom.el")
 (load custom-file 'noerror)
+
+;; Disable the tool bar.
+(tool-bar-mode -1)
+;; Disable the menu bar.
+(menu-bar-mode -1)
+;; Disable the scroll bar.
+(scroll-bar-mode -1)
