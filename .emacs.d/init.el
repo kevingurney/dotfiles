@@ -22,3 +22,10 @@
   (require 'use-package))
 
 (setq use-package-always-ensure t)
+
+;; Install the gruvbox color theme.
+(use-package gruvbox-theme)
+
+;; Load the gruvbox-dark-hard color theme after initialization.
+(add-hook 'after-init-hook (lambda()
+			     (load-theme 'gruvbox-dark-hard)))
